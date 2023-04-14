@@ -1,5 +1,9 @@
+CC = gcc
+CFLAGS = -Wall -g3 -o3
+RM = rm -f
+
 hello:
-	gcc hello.c -o hello.out
+	$(CC) $(CFLAGS) hello.c -o hello.out
 
 clean:
-	rm hello.out
+	$(RM) hello.out
